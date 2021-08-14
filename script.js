@@ -4,13 +4,16 @@ let newTodoInput = document.getElementById('new-todo')
 let todoList = document.getElementById('todo-list')
 var todos = ['test1', 'test2', 'test3']
 
-
+genList()
 // loop through array
-for (var i = 0; i < todos.length; i++ ) {
+function genList() {
+    //clear out list in DOM
+    todoList.innerHTML=''
+    for (var i = 0; i < todos.length; i++ ) {
     var addLi = document.createElement('li')
     addLi.innerText = todos[i]
     todoList.appendChild(addLi)
-
+    }
 }
     //create html for DOM
     //add values
@@ -27,6 +30,7 @@ function addTodo(event) {
     todos.push(newTodoText)
     console.log(todos)
     newTodoInput.value =''
+    genList()
 }
 newTodoForm.addEventListener('submit',addTodo)
 
