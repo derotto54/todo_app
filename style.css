@@ -9,7 +9,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 .container {
     background: var(--light);
     max-width: 450px;
@@ -22,8 +21,6 @@ body {
 h1 {
     text-align: center;
 }
-
-
 
 #new-todo-form {
     display: flex;
@@ -43,4 +40,9 @@ input[type="submit"] {
     background: rgb(58, 55, 83);
     color: var(--light);
     cursor: pointer;
+}
+
+ul {
+    font-size: medium;
+    text-align: left;
 }

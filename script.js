@@ -4,6 +4,21 @@ let newTodoInput = document.getElementById('new-todo')
 let todoList = document.getElementById('todo-list')
 var todos = ['test1', 'test2', 'test3']
 
+
+// loop through array
+for (var i = 0; i < todos.length; i++ ) {
+    var addLi = document.createElement('li')
+    addLi.innerText = todos[i]
+    todoList.appendChild(addLi)
+
+}
+    //create html for DOM
+    //add values
+    //append into DOM
+
+
+
+
 // listen to add item button
 function addTodo(event) {
     event.preventDefault()
@@ -15,7 +30,6 @@ function addTodo(event) {
 }
 newTodoForm.addEventListener('submit',addTodo)
 
-//for (var i = 0, )
 
 // Count the number of todos
 
